@@ -1,0 +1,6 @@
+#build --subcommands=pretty_print
+common:seb --disk_cache=cache/disk
+common:seb --repository_cache=cache/repo
+
+# If you would like to add more configuration, you can create user.bazelrc and add it there
+try-import user.bazelrc
