@@ -21,7 +21,7 @@ $ docker run bazel/src/main/java/se/tink/hello:docker
 Using `analyze-profile`:
 
 ```
-$ bazel build bazel build --profile=hello.json //src/main/java/se/tink/hello
+$ bazel build --profile=hello.json //src/main/java/se/tink/hello
 $ bazel analyze-profile hello.json
 
 === PHASE SUMMARY INFORMATION ===
