@@ -50,5 +50,5 @@ $ # Open it in your favorite image viewer:
 $ feh hello.png
 ```
 
-You can also install Gephi to look at the dependency graph.
+You can also install Gephi and load `hello.dot` to look at the dependency graph.
 
