@@ -1,2 +1,4 @@
 user.bazelrc
 cache/
+*.dot
+*.png
