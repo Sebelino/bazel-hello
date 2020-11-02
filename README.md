@@ -26,7 +26,8 @@ For more details, open up Chrome and put `chrome://tracing` in the address bar. 
 You need Graphviz installed (for `dot`):
 
 ```
-$ bazel query --noimplicit_deps 'deps(//...)' --output graph > hello.dot && dot -Tpng hello.dot > hello.png
+$ bazel query --noimplicit_deps 'deps(//...)' --output graph > hello.dot
+$ dot -Tpng hello.dot > hello.png
 $
 $ # Open it in your favorite image viewer:
 $ feh hello.png
