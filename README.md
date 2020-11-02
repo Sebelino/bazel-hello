@@ -1,5 +1,22 @@
 # Bazel project example
 
+## Run the program
+```
+$ bazel run //src/main/java/se/tink/hello
+```
+
+## Test the program
+```
+$ bazel test //src/test/java/se/tink/hello
+```
+
+## Run the program in Docker
+Upload the image to your local Docker registry:
+```
+$ bazel run //src/main/java/se/tink/hello:docker
+$ docker run bazel/src/main/java/se/tink/hello:docker
+```
+
 ## Profiling of build time
 Using `analyze-profile`:
 
