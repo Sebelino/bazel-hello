@@ -7,6 +7,10 @@ java_binary(
     srcs = glob(["*.java"]),
     main_class = "se.tink.hello.HelloWorld",
     visibility = ["//visibility:public"],
+    deps = [
+        "@maven//:com_amazonaws_aws_java_sdk_core",
+        "@maven//:com_amazonaws_aws_java_sdk_sqs",
+    ],
 )
 
 pkg_tar(

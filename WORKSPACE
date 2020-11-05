@@ -16,7 +16,9 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
         "junit:junit:4.12",
+        "com.amazonaws:aws-java-sdk-sqs:1.11.893",
     ],
+    fetch_sources = True,
     repositories = [
         "https://jcenter.bintray.com/",
         "https://maven.google.com",
