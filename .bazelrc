@@ -4,6 +4,7 @@
 
 # Workaround for PATH issue
 build --incompatible_strict_action_env
+build --remote_timeout=600s
 
 # If you would like to add more configuration, you can create user.bazelrc and add it there
 try-import user.bazelrc
