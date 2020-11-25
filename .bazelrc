@@ -2,5 +2,8 @@
 #common:seb --disk_cache=cache/disk
 #common:seb --repository_cache=cache/repo
 
+# Workaround for PATH issue
+build --incompatible_strict_action_env
+
 # If you would like to add more configuration, you can create user.bazelrc and add it there
 try-import user.bazelrc
