@@ -25,7 +25,6 @@ maven_install(
         "https://maven.google.com",
         "https://repo1.maven.org/maven2",
     ],
-    generate_compat_repositories = True,
 )
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
