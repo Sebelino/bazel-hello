@@ -2,6 +2,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.openqa.selenium.WebDriver;
@@ -28,4 +29,7 @@ public class BrowserTest {
             driver = null;
         }
     }
+
+    @Test
+    public void hoy() {}
 }
