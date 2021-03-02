@@ -1,3 +1,5 @@
+package se.tink.webtesting;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import org.junit.After;
