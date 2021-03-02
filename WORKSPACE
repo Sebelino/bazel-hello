@@ -16,12 +16,16 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
         "junit:junit:4.12",
+        "org.seleniumhq.selenium:selenium-api:3.141.59",
+        "org.seleniumhq.selenium:selenium-remote-driver:3.141.59",
+        "com.google.guava:guava:28.0-jre",
     ],
     repositories = [
         "https://jcenter.bintray.com/",
         "https://maven.google.com",
         "https://repo1.maven.org/maven2",
     ],
+    generate_compat_repositories = True,
 )
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
@@ -68,3 +72,23 @@ load(
 )
 
 _java_image_repos()
+
+# Bazel Web Testing Rules
+
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "io_bazel_rules_webtesting",
+    sha256 = "f1f4d2c2f88d2beac64c82499a1e762b037966675dd892da89c87e39d72b33f6",
+    urls = [
+        "https://github.com/bazelbuild/rules_webtesting/releases/download/0.3.2/rules_webtesting.tar.gz",
+    ],
+)
+
+load("@io_bazel_rules_webtesting//web:repositories.bzl", "web_test_repositories")
+
+web_test_repositories()
+
+load("@io_bazel_rules_webtesting//web/versioned:browsers-0.3.2.bzl", "browser_repositories")
+
+browser_repositories(chromium=True, firefox=True)
