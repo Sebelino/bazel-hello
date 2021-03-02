@@ -9,7 +9,6 @@ java_web_test_suite(
     local = True,
     deps = [
         "@maven//:junit_junit",
-        #"//java/com/google/testing/web",
         "@maven//:org_seleniumhq_selenium_selenium_api",
         "@maven//:org_seleniumhq_selenium_selenium_remote_driver",
         "@maven//:com_google_guava_guava",
