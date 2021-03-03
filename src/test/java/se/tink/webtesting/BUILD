@@ -7,7 +7,7 @@ java_web_test_suite(
         "@io_bazel_rules_webtesting//browsers:chromium-local",
     ],
     local = True,
-    test_class = "BrowserTest",
+    test_class = "se.tink.webtesting.BrowserTest",
     deps = [
         "@maven//:com_google_guava_guava",
         "@maven//:junit_junit",
