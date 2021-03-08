@@ -1,0 +1,7 @@
+.git
+.ijwb
+user.bazelrc
+bazel-bazel-hello
+bazel-bin
+bazel-out
+bazel-testlogs

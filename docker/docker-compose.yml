@@ -1,0 +1,7 @@
+services:
+  app:
+      image: "bazel-hello-example:latest"
+      working_dir: /app
+      volumes:
+        - /tmp/bazelcache/outputroot-bazel-hello:/root/.cache/bazel
+        - /tmp/bazelcache/bazelisk-bazel-hello:/root/.cache/bazelisk

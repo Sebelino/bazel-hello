@@ -52,3 +52,9 @@ $ feh hello.png
 
 You can also install Gephi and load `hello.dot` to look at the dependency graph.
 
+## Building with Bazel inside a Docker container
+```
+$ docker build . -f docker/Dockerfile -t bazel-hello-example
+
+$ docker-compose -f docker/docker-compose.yml run --rm app /bin/sh -c "$(cat ./docker/build-all.sh)"
+```
