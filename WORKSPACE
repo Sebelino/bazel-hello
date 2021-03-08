@@ -68,3 +68,11 @@ load(
 )
 
 _java_image_repos()
+
+load("//platforms:repositories.bzl", "nix_repositories")
+
+nix_repositories()
+
+load("//platforms:deps.bzl", "nix_deps")
+
+nix_deps()
