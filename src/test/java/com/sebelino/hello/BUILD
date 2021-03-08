@@ -1,9 +1,9 @@
 java_test(
     name = "hello",
     srcs = glob(["*.java"]),
-    test_class = "se.tink.hello.HelloWorldTest",
+    test_class = "com.sebelino.hello.HelloWorldTest",
     deps = [
-        "//src/main/java/se/tink/hello",
+        "//src/main/java/com/sebelino/hello",
         "@maven//:junit_junit",
     ],
 )

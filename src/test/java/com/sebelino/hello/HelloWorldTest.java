@@ -1,4 +1,4 @@
-package se.tink.hello;
+package com.sebelino.hello;
 
 import org.junit.Assert;
 import org.junit.Test;

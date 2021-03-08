@@ -2,26 +2,26 @@
 
 ## Run the program
 ```
-$ bazel run //src/main/java/se/tink/hello
+$ bazel run //src/main/java/com/sebelino/hello
 ```
 
 ## Test the program
 ```
-$ bazel test //src/test/java/se/tink/hello
+$ bazel test //src/test/java/com/sebelino/hello
 ```
 
 ## Run the program in Docker
 Upload the image to your local Docker registry:
 ```
-$ bazel run //src/main/java/se/tink/hello:docker
-$ docker run bazel/src/main/java/se/tink/hello:docker
+$ bazel run //src/main/java/com/sebelino/hello:docker
+$ docker run bazel/src/main/java/com/sebelino/hello:docker
 ```
 
 ## Profiling of build time
 Using `analyze-profile`:
 
 ```
-$ bazel build --profile=hello.json //src/main/java/se/tink/hello
+$ bazel build --profile=hello.json //src/main/java/com/sebelino/hello
 $ bazel analyze-profile hello.json
 
 === PHASE SUMMARY INFORMATION ===

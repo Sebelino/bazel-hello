@@ -5,7 +5,7 @@ load("@rules_pkg//:pkg.bzl", "pkg_tar")
 java_binary(
     name = "hello",
     srcs = glob(["*.java"]),
-    main_class = "se.tink.hello.HelloWorld",
+    main_class = "com.sebelino.hello.HelloWorld",
     visibility = ["//visibility:public"],
 )
 
