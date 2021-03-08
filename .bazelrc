@@ -9,5 +9,12 @@ build --java_toolchain=@bazel_tools//tools/jdk:toolchain_java11"
 
 build --incompatible_strict_action_env
 
+# BuildBuddy
+build --bes_results_url=https://app.buildbuddy.io/invocation/
+build --bes_backend=grpcs://cloud.buildbuddy.io
+build --remote_cache=grpcs://cloud.buildbuddy.io
+build --remote_timeout=3600
+try-import build-buddy.bazelrc
+
 # If you would like to add more configuration, you can create user.bazelrc and add it there
 try-import user.bazelrc
