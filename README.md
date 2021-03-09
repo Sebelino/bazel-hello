@@ -66,3 +66,13 @@ In the repository root directory, create a file `build-buddy.bazelrc` with the f
 build --remote_header=x-buildbuddy-api-key=xxxxxxxxxxxxxxxxxxxx
 ```
 where `xxxxxxxxxxxxxxxxxxxx` is your BuildBuddy API key.
+
+Run with remote caching:
+```
+bazel build --config=rc //...
+```
+
+Run with remote caching + remote build execution:
+```
+bazel build --config=rcbe //...
+```
