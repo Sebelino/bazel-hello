@@ -4,7 +4,6 @@ RUN apt-get update -y &&\
     apt-get install -y \
         curl \
         python \
-        python3 \
         git \
         openjdk-8-jre \
         make \
