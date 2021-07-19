@@ -7,6 +7,8 @@ RUN apt-get update -y &&\
         python3 \
         git \
         openjdk-8-jre \
+        make \
+        zlib1g-dev \
         g++
 
 RUN set -ex; \
