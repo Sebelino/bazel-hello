@@ -7,3 +7,6 @@ bazel-bazel-hello
 bazel-bin
 bazel-out
 bazel-testlogs
+
+.idea
+*.iml

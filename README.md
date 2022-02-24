@@ -76,3 +76,7 @@ Run with remote caching + remote build execution:
 ```
 bazel build --config=rcbe //...
 ```
+
+This is a test entry
+
+    echo hey
